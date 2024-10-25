@@ -1,8 +1,8 @@
 # Basics of Socket.IO
 
-## Websocket used for Real Time Data Sending
+**Websocket used for Real Time Data Sending**
 
-## Socket.IO is websocket library
+**Socket.IO is websocket library**
 
 Websockets ==> HTTP / FTP / SMTP
 
@@ -26,7 +26,7 @@ Websockets ==> HTTP / FTP / SMTP
 - To = trigger event for particular room
 - Join = to join people/socket on room
 
-## IMPORTANT THIS
+**IMPORTANT CODES**
 
 ```
 io.emit(Event, "Hello")
