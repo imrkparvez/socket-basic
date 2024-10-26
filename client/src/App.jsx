@@ -12,6 +12,10 @@ const App = () => {
       console.log("Connected!", socket.id);
     });
 
+    socket.on("receive-message", (data)=> {
+      console.log(data);      
+    })
+
     return () => {
       socket.disconnect();
     };

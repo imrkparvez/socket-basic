@@ -146,3 +146,6 @@ return () => {
 ```
 const socket = useMemo(() => io("http://localhost:3000"), []);
 ```
+
+- if you want to send a message for everyone including you like sending message to a group use `.emit`
+- if you want to send a message to everyone excluding you use `.broadcast.emit`
