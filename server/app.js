@@ -24,10 +24,9 @@ io.on("connection", (socket) => {
   console.log("User connected");
   console.log(`Id: ${socket.id}`);
 
-  socket.emit("welcome", `Welcome to the server, ${socket.id}`);
-  // socket.broadcast.emit("welcome", `Welcome to the server, ${socket.id}`);
-
-  socket.broadcast.emit("welcome", `${socket.id} joined the server`);
+  socket.on("disconnect", () => {
+    console.log(`User disconnected ${socket.id}`);
+  });
 });
 
 server.listen(port, () => {
